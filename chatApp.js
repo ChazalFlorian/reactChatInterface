@@ -101,7 +101,7 @@ export default class chatApp extends Component {
                  } else {
                    if (!this._isAlright) {
                      this._isAlright = true;
-                     this.onReceive('Alright');
+                     this.onReceive('OK dude');
                    }
                  }
                }
@@ -204,7 +204,6 @@ export default class chatApp extends Component {
             _id: 1, // sent messages should have same user._id
           }}
 
-          renderActions={this.renderCustomActions}
           renderBubble={this.renderBubble}
           renderCustomView={this.renderCustomView}
           renderFooter={this.renderFooter}
